@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1
+{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    margin-bottom: 15px;
+    font-size: 50px;
+}
+
+input,label
+{
+ display: block;
+}
+
+label
+{
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ font-size: 25px;
+}
+
+input
+{
+ width: 100%;
+ height: 40px;    
+ font-size: 18px;
+ background-color: rgb(237, 248, 143);
+ font-family:Arial, Helvetica, sans-serif;
+ color: rgb(14, 82, 90);
+
+}
+
+.subbtn
+{
+    margin: 15px auto 0 auto;
+    width: 30%;
+    height: 50px;
+    background-color: rgb(237, 248, 143);
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+form
+{
+    min-width: 300px;
+    max-width: 500px;
+    margin: auto;
+    border: 5px double black;
+    padding: 15px ;
+    
+}
+body 
+{
+    margin-top: 60px;
+    background-color: beige;
+}
+
+.formtextbox
+{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.mainpage 
+{
+    margin: 20px; /* Adjust this to your desired margin size */
+}
+
+
