@@ -55,7 +55,7 @@ form
 }
 body 
 {
-    margin-top: 60px;
+    
     background-color: beige;
 }
 
@@ -71,4 +71,11 @@ body
     margin: 20px; /* Adjust this to your desired margin size */
 }
 
+.g-recaptcha
+{
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: -30px;
+    display: flex;
+}
 

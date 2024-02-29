@@ -1,36 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <div class="mainpage">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web to Lead Form</title>
-    <link rel="stylesheet" href="style.css"/>
-    <script src="script.js"></script>
-</head>
-<body>
-    <h1>Create New Lead</h1>
-    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D5h0000093IE8" method="POST" onsubmit="beforesubmit()">
-    
-    <input type=hidden name="oid" value="00D5h0000093IE8">
-    <input type=hidden name="retURL" value="https://pranavjathar.github.io/Web-to-Lead-Bootcamp-Mini-Project/thanks.html">
 
-    <input type=hidden name="Lead_Date__c" class="outputdate">
-    
-    <label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" required="true" class="formtextbox"/><br>
-    
-    <label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" required="true" class="formtextbox"/><br>
-    
-    <label for="company">Company</label><input  id="company" maxlength="40" name="company" size="20" type="text" required="true" class="formtextbox"/><br>
-    
-    <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" required="true" class="formtextbox"/><br>
-    
-    <label for="company">Lead Date</label><input type="date" required="true" class="inputdate" class="formtextbox"/>
-    
-    <input type="submit" name="submit" class="subbtn">
-    
-    </form>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web to Lead Form</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+    </head>
+
+    <body>
+        <h1>Create New Lead</h1>
+        <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D5h0000093IE8"
+            method="POST" onsubmit="beforesubmit()">
+
+            <input type=hidden name='captcha_settings'
+                value='{"keyname":"webtolead","fallback":"true","orgId":"00D5h0000093IE8","ts":""}'>
+            <input type=hidden name="oid" value="00D5h0000093IE8">
+            <input type=hidden name="retURL"
+                value="https://pranavjathar.github.io/Web-to-Lead-Bootcamp-Mini-Project/thanks.html">
+
+            <input type=hidden name="Lead_Date__c" class="outputdate">
+
+            <label for="first_name">First Name</label><input id="first_name" maxlength="40" name="first_name" size="20"
+                type="text" required="true" class="formtextbox" /><br>
+
+            <label for="last_name">Last Name</label><input id="last_name" maxlength="80" name="last_name" size="20"
+                type="text" required="true" class="formtextbox" /><br>
+
+            <label for="company">Company</label><input id="company" maxlength="40" name="company" size="20" type="text"
+                required="true" class="formtextbox" /><br>
+
+            <label for="email">Email</label><input id="email" maxlength="80" name="email" size="20" type="text"
+                required="true" class="formtextbox" /><br>
+
+            <label for="company">Lead Date</label><input type="date" required="true" class="inputdate"
+                class="formtextbox" />
+                <div class="g-recaptcha" data-sitekey="6Ld8zoQpAAAAAErYtXDFQBX3Nj7ls8Tm0ssDJnPH"></div><br>
+            <input type="submit" name="submit" class="subbtn">
+
+        </form>
+
+    </body>
 </div>
+
 </html>
